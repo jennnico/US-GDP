@@ -1,0 +1,39 @@
+body {
+  background: #7de3ed;
+  text-align: center;
+}
+
+.container{
+  background: white;
+  padding: 1rem;
+  max-width: 90rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin : {
+    left: auto;
+    right: auto;
+    top: 4rem
+    }
+}
+
+
+li{
+  list-style: none;
+}
+
+//delete .bar later
+.bar{
+  width: 3.5px;
+  display: inline-block;
+  background-color: blue
+}
+
+.bar:hover{
+  background-color: lightblue
+}
+
+.graph{
+  fill: navy
+}
+.graph:hover{
+  fill: lightblue
+}
