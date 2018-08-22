@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded',function(){
                 .attr("y", (d, i) => {return h - 2*padding+5 - d[1]/50})
                 .attr("class", "bar")
                 .append("title")
-                .text(d => d[0] + " $" + d[1] + " Billion")
+                .text(d => d[0] + "\n$" + d[1] + " Billion")
 
             //Add and move the X-axis
              svg.append("g")
