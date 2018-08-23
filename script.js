@@ -18,8 +18,8 @@ document.addEventListener('DOMContentLoaded',function(){
       data2.push([parseDate(val[0]), val[1]])
     })
 
-    const w = 1000; //width
-    const h = 600; //height
+    const w = 3*(data2.length) + 200
+    const h = (d3.max(data2, d => d[1]))/50 + 200
     const padding = 100 //padding
     
     //Scale for x-axis (years)
@@ -34,7 +34,6 @@ document.addEventListener('DOMContentLoaded',function(){
 
     //Set the X and Y axes
     const xAxis = d3.axisBottom(xScale)
-                   //  .ticks(d3.timeYear.every(0))
     const yAxis = d3.axisLeft(yScale)
     
     // Adds the svg canvas
@@ -71,5 +70,3 @@ document.addEventListener('DOMContentLoaded',function(){
   };
 
   });
-
-
